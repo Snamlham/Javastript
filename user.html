@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Numbers and Sheep</title>
+</head>
+<body>
+  <p id="sumResult"></p>
+  <p id="sheepResult"></p>
+  <button onclick="runProgram()">Start Program</button>
+
+  <script>
+    function addNumbers(a, b) {
+      return a + b;
+    }
+
+    function runProgram() {
+      let num1 = prompt("Enter the first number:");
+      let num2 = prompt("Enter the second number:");
+
+      let sum = addNumbers(num1 * 1, num2 * 1); 
+      document.getElementById("sumResult").innerHTML = "The sum is: " + sum;
+
+      let choice = prompt("Enter a number between 1 and 5:");
+      let result;
+
+      switch (choice) {
+        case "1":
+          result = "one sheep";
+          break;
+        case "2":
+          result = "two sheep";
+          break;
+        case "3":
+          result = "three sheep";
+          break;
+        case "4":
+          result = "four sheep";
+          break;
+        case "5":
+          result = "five sheep";
+          break;
+        default:
+          result = "try again";
+      }
+
+      document.getElementById("sheepResult").innerHTML = result;
+    }
+  </script>
+</body>
+</html>
