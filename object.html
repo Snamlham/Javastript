@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <script>
+        const person1 = { name: "Sonam", age: "23", phone: "17925640"};
+        const person2 = new Object({name: "Pema", age: "21", phone: "17524837"});
+        
+        document.getElementById("para1").innerHTML = "Name: " + person1.name + " Age: " + person1.age;
+    </script>
+   <script>
+        const person3 = { studentname: "Wangmo", id: "101", course: "DMA"};
+        const person4 = new Object({ studentname: "Yangden", id: "102", course: "CSN" });
+
+        document.getElementById("para2").innerHTML = "Studentname: " + person3.studentname + " Id: " + person3.id + " Course: " + person3.course;
+    </script>
+    
+    <script>
+    const person5 = {
+        name: "Sonam",
+        id: "23",
+        course: "CSN",
+        greeting: function(){
+            return this.name + " is in " + this.course;
+        }
+    };
+    document.getElementById("para2").innerHTML = person5.greeting();
+    </script>
+</body>
+</html>
