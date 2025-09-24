@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+   
+</head>
+<body>
+    <p id="para1"></p>
+     <script>
+        let fruits = ["apple", "mango", "banana"];
+        let color = new Array("red", "blue", "green");
+        let result = document.getElementById("para1");
+        fruits[1]="grapes";
+
+        let arraySize = fruits.length;
+
+        // removing last element
+        fruits.pop(); 
+
+        // adding the last to the element
+        fruits.push("orange");
+
+        let arr1 = ["C", "C++"];
+        let arr2 = ["Java", "Python"];
+        let arr3 = arr1.concat(arr2);
+
+
+
+
+        result.innerHTML = fruits;
+        
+    </script>
+    
+</body>
+</html>
